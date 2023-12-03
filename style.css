@@ -1,0 +1,96 @@
+/* Add a global font and padding to the body for overall spacing, set dark background */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333333; /* Dark background for the page */
+    color: #ffffff; /* White text color */
+}
+
+/* Style for the chat container */
+.chat-container {
+    padding: 16px;
+    max-width: 800px;
+    margin: 32px auto;
+    background-color: transparent; /* Make background transparent */
+    border-radius: 8px;
+    box-shadow: none; /* Remove box-shadow if not needed */
+}
+
+/* Style for chat bubbles */
+.bubble {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: transparent; /* Make bubble background transparent */
+    border: none; /* Remove borders around bubbles */
+    box-shadow: none; /* Remove shadow from bubbles */
+}
+
+/* Style for user and bot messages */
+.bubble-user {
+    justify-content: flex-end;
+}
+
+.bubble-text-user, .bubble-text-bot {
+    color: #ffffff; /* White text for bubbles */
+    padding: 16px 24px;
+    border-radius: 24px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+/* Input and button styling */
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between input field and button */
+}
+
+.input-group > input {
+    flex-grow: 1;
+    padding: 16px;
+    border: 2px solid #555555;
+    border-radius: 24px;
+    background-color: #424242;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.input-group > button {
+    padding: 16px 20px;
+    border: none;
+    border-radius: 24px;
+    background-color: #007bff; /* Example primary color */
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Additional styles for messages if they are not part of the bubbles */
+.message.user, .message.bot {
+    color: #ffffff; /* White text color */
+    margin: 0 0 4px 0; /* Some margin at the bottom of each message */
+}
+
+
+/* Adjustments for input field */
+.stTextInput > div > div > input {
+    background-color: #424242; /* Adjust to match your theme */
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 24px;
+    padding: 10px;
+}
+
+/* Adjustments for buttons */
+.stButton > button {
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    background-color: #007bff; /* Adjust to match your theme */
+    color: #ffffff;
+    margin-left: 5px; /* Space between buttons */
+}
